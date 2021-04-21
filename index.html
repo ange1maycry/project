@@ -466,6 +466,9 @@
                 <!-- /.form footer__form --> 
             </div>
             <!-- /.footer-wrap -->
+            <div class="map footer__map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2812d06517a0dbc8b10b39f1d77fde063c49899c578c7b2c9875eedc2ad05d11&amp;width=100%25&amp;height=465&amp;lang=ru_RU&amp;scroll=false"></script>
+            </div>
         </div>
         <!-- /.container -->
         <div class="footer__menu">
@@ -495,7 +498,7 @@
         <div class="modal__dialog">
             <button class="modal__close"></button>
             <h3 class="modal__title">Оставьте заявку и наш менеджер свяжется с вами </h3>
-            <form action="#" class="form modal__form">
+            <form action="send.php" method="POST" class="form modal__form">
                 <div class="input-group modal__input-group">
                     <label for="user-name" class="label form__label label--light">Имя</label>
                     <input type="text" name="userName" class="input form__input modal__input input--light" id="user-name" placeholder="Как вас зовут:">
