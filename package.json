@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "animate.css": "^4.1.1",
-    "browser-sync": "^2.26.14"
+    "browser-sync": "^2.26.14",
+    "gulp-clear-inline-css": "^1.0.4"
   }
 }

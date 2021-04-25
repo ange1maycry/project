@@ -2,6 +2,7 @@ const {src, dest, watch} = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
+const clearCSS = require('gulp-clear-inline-css');
 
 
 // Static server
@@ -28,4 +29,12 @@ function serveSass() {
         .pipe(browserSync.stream());
 };
 
+function buildCSS(done) {
+    src('css/**/**.css')
+        .pipe(clearInlineCss())
+        .pipe(dest('dist/css/'));
+        done();
+}
+
 exports.serve = bs;
+exports.buildCSS = buildCSS;
